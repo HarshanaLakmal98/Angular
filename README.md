@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
 
+hr
+![Project Image](./src/assets/project%20Screenshots/Screenshot%20(1).png)
 ## Abuot Project
 In this project, I tried to create basic header and our team card
 
