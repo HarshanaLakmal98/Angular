@@ -5,5 +5,6 @@
   </div>
 </header>
 <app-card></app-card>
-<div *ngIf="footerClass">show message</div>
-<app-footer ></app-footer>
+<div *ngIf="footerClass">show message</div><!-- ngIf with expression -->
+<div class="" [hidden]=false>THis is hidden</div>
+<app-footer *ngIf=true ></app-footer><!-- ngIf with true of false -->
