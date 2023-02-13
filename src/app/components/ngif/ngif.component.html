@@ -1,0 +1,43 @@
+<div class="container">
+  <form action="">
+    <div class="form-check">
+      <label for="boy-radio" class="form-check-label">Boy</label>
+      <input type="radio" class="form-check-input" name="gender" id="boy-radio" (click)="onChange(true)">
+    </div>
+    <div class="form-check">
+      <label for="girl-radio" class="form-check-label">Girl</label>
+      <input type="radio" class="form-check-input" name="gender" id="girl-radio" (click)="onChange(false)">
+    </div>
+  </form>
+
+  <div *ngIf="isVissible; then theBoy ; else theGirl"></div>
+  <div class="row">
+      <ng-template #theBoy>
+        <div class="col-6">
+          <div class="card border-0 shadow-lg">
+            <img src="../../../assets/images/profile-1.png" alt="" class="card-image-top">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Harshana Lakmal</h3>
+              <h4 class="card-title">Web Developer</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis.</p>
+              <a href="#" class="btn btn-primary px-3">Profile</a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template #theGirl>
+        <div class="col-6">
+          <div class="card border-0 shadow-lg">
+            <img src="../../../assets/images/profile-2.png" alt="" class="card-image-top">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Akila Senewirathne</h3>
+              <h4 class="card-title">Web Developer</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis.</p>
+              <a href="#" class="btn btn-primary px-3">Profile</a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+</div>
