@@ -9,6 +9,7 @@ import { NgifComponent } from './components/ngif/ngif.component';
 import { InputComponent } from './components/input/input.component';
 import { MessageComponent } from './components/message/message.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
+import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
     NgifComponent,
     InputComponent,
     MessageComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule,
