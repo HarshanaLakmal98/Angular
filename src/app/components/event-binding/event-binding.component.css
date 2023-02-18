@@ -1,0 +1,9 @@
+.container .content {
+  color: red;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.container .content:hover {
+  cursor: pointer;
+}

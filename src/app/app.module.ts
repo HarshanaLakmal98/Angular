@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgifComponent } from './components/ngif/ngif.component';
+import { InputComponent } from './components/input/input.component';
+import { MessageComponent } from './components/message/message.component';
+import { EventBindingComponent } from './components/event-binding/event-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     FooterComponent,
-    NgifComponent
+    NgifComponent,
+    InputComponent,
+    MessageComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule,
