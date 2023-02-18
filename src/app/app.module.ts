@@ -11,6 +11,7 @@ import { MessageComponent } from './components/message/message.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
 import { ClassBindingComponent } from './components/class-binding/class-binding.component';
+import { AttributeBindingComponent } from './components/attribute-binding/attribute-binding.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ClassBindingComponent } from './components/class-binding/class-binding.
     MessageComponent,
     EventBindingComponent,
     PropertyBindingComponent,
-    ClassBindingComponent
+    ClassBindingComponent,
+    AttributeBindingComponent
   ],
   imports: [
     BrowserModule,
