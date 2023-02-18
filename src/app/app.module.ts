@@ -10,6 +10,7 @@ import { InputComponent } from './components/input/input.component';
 import { MessageComponent } from './components/message/message.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
+import { ClassBindingComponent } from './components/class-binding/class-binding.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PropertyBindingComponent } from './components/property-binding/property
     InputComponent,
     MessageComponent,
     EventBindingComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    ClassBindingComponent
   ],
   imports: [
     BrowserModule,
