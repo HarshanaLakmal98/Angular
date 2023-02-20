@@ -12,6 +12,7 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
 import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
 import { ClassBindingComponent } from './components/class-binding/class-binding.component';
 import { AttributeBindingComponent } from './components/attribute-binding/attribute-binding.component';
+import { NgForComponent } from './components/ng-for/ng-for.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AttributeBindingComponent } from './components/attribute-binding/attrib
     EventBindingComponent,
     PropertyBindingComponent,
     ClassBindingComponent,
-    AttributeBindingComponent
+    AttributeBindingComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,

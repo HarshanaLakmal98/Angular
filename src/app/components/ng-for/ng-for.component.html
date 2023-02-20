@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 class="my-1 text-center text-bg-dark p-2">ngFor</h1>
+  <code><strong>Code:</strong> *ngFor = "let variableName of object/array name</code>
+  <table class="table table-striped table-sm">
+    <thead class="table-primary">
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students; index as i">
+        <td>{{i+1}}</td>
+        <td>{{student.firstName}}</td>
+        <td>{{student.lastName}}</td>
+        <td>{{student.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
