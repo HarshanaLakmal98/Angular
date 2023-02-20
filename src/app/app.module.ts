@@ -13,6 +13,7 @@ import { PropertyBindingComponent } from './components/property-binding/property
 import { ClassBindingComponent } from './components/class-binding/class-binding.component';
 import { AttributeBindingComponent } from './components/attribute-binding/attribute-binding.component';
 import { NgForComponent } from './components/ng-for/ng-for.component';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NgForComponent } from './components/ng-for/ng-for.component';
     PropertyBindingComponent,
     ClassBindingComponent,
     AttributeBindingComponent,
-    NgForComponent
+    NgForComponent,
+    NgSwitchComponent
   ],
   imports: [
     BrowserModule,
