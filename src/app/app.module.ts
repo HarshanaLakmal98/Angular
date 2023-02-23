@@ -14,6 +14,7 @@ import { ClassBindingComponent } from './components/class-binding/class-binding.
 import { AttributeBindingComponent } from './components/attribute-binding/attribute-binding.component';
 import { NgForComponent } from './components/ng-for/ng-for.component';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import { ChlidComp1Component } from './components/chlid-comp1/chlid-comp1.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
     ClassBindingComponent,
     AttributeBindingComponent,
     NgForComponent,
-    NgSwitchComponent
+    NgSwitchComponent,
+    ChlidComp1Component
   ],
   imports: [
     BrowserModule,
