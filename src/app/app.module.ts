@@ -16,6 +16,7 @@ import { NgForComponent } from './components/ng-for/ng-for.component';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { ChlidComp1Component } from './components/chlid-comp1/chlid-comp1.component';
 import { EventFilteringComponent } from './components/event-filtering/event-filtering.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { EventFilteringComponent } from './components/event-filtering/event-filt
     NgForComponent,
     NgSwitchComponent,
     ChlidComp1Component,
-    EventFilteringComponent
+    EventFilteringComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,

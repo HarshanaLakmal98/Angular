@@ -1,4 +1,8 @@
 <div class="container">
   <h1 class="text-center text-bg-success p-2 my-2">Event Filtering</h1>
-  <input type="text" name="name" id="name" (keyup.shift)="onKeyup()">
+  <!-- event filtering  -->
+  <input type="text" name="name" id="name" (keyup.enter)="onKeyup()" class="form-control" placeholder="Enter some value">
+
+  <input type="text" (keyup)="onKeyUp2($event)" [ngClass]="inputClass2" placeholder="Enter some value">
+  <p class="h3">{{onKeyUp2data}}</p>
 </div>
