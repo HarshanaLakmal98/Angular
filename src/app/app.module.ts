@@ -15,6 +15,7 @@ import { AttributeBindingComponent } from './components/attribute-binding/attrib
 import { NgForComponent } from './components/ng-for/ng-for.component';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { ChlidComp1Component } from './components/chlid-comp1/chlid-comp1.component';
+import { EventFilteringComponent } from './components/event-filtering/event-filtering.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ChlidComp1Component } from './components/chlid-comp1/chlid-comp1.compon
     AttributeBindingComponent,
     NgForComponent,
     NgSwitchComponent,
-    ChlidComp1Component
+    ChlidComp1Component,
+    EventFilteringComponent
   ],
   imports: [
     BrowserModule,
