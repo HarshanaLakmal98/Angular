@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class TwoWayBindingComponent {
 
+  inputValue1:any;
+  onkeyUp(keyUp: any){
+    this.inputValue1 = keyUp
+  }
+
+  bindingVariable1: string = '';
+  onKeyUp(){
+    this.bindingVariable1;
+  }
 }

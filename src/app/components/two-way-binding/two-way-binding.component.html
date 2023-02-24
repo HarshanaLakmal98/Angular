@@ -1,1 +1,9 @@
-<p>two-way-binding works!</p>
+<div class="container">
+  <h1 class="text-center text-bg-dark my-2 p-2">Two way data binding</h1>
+  <input type="text" class="form-control" placeholder="After type some value HIT The Enter Button" (keyup.enter)="onkeyUp(keyUp.value)" #keyUp>
+  <p class="h3">{{inputValue1}}</p>
+
+  <input type="text" class="form-control my-2" placeholder="two way data binding" [(ngModel)]="bindingVariable1" (keyup)="onKeyUp()">
+
+  <p>{{bindingVariable1}}</p>
+</div>
