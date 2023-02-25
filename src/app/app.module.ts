@@ -19,6 +19,7 @@ import { ChlidComp1Component } from './components/chlid-comp1/chlid-comp1.compon
 import { EventFilteringComponent } from './components/event-filtering/event-filtering.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
+import { Activity1Component } from './activity/activity1/activity1.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { NgStyleComponent } from './components/ng-style/ng-style.component';
     ChlidComp1Component,
     EventFilteringComponent,
     TwoWayBindingComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    Activity1Component
   ],
   imports: [
     FormsModule,
