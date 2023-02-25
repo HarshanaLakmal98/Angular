@@ -1,5 +1,15 @@
 .container{
+  .form{
+    padding: 1rem;
+    box-shadow: 2px 2px 5px 2px gray;
+    margin: 1rem 0;
+  }
   .form > *{
-    margin: .5rem 0;
+    margin: 1rem 0;
+  }
+  .table{
+    padding: 1rem;
+    box-shadow: 1px 1px 3px 1px gray;
+    margin: 1rem 0;
   }
 }
