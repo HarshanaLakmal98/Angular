@@ -6,26 +6,30 @@
     <input type="text" class="form-control" placeholder="Enter Your Name" [(ngModel)]="userName">
     <input type="email" class="form-control" placeholder="Enter Your Email" [(ngModel)]="userEmail">
     <textarea class="form-control" placeholder="Enter Your Address" [(ngModel)]="userAddress"></textarea>
-    <input type="submit" value="Save Data" (click)="submitData(userName, userEmail, userAddress)">
+    <input type="submit" value="Save Data" (click)="submitData()">
   </div>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Address</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let user of users; let i = index;">
-        <td>{{i +1 }}</td>
-        <td>{{user.name}}</td>
-        <td>{{user.email}}</td>
-        <td>{{user.address}}</td>
-        <td><button (click)="onDelete(i)">Delete</button></td>
-      </tr>
-    </tbody>
-  </table>
+    <table class="table" *ngIf="users.length> 0;   else errorMessage">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; let i = index;">
+          <td>{{i +1 }}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.address}}</td>
+          <td><button (click)="onDelete(i)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+  <ng-template #errorMessage>
+    <h3>No Data</h3>
+  </ng-template>
 </div>

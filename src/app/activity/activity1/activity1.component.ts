@@ -13,9 +13,9 @@ export class Activity1Component {
   users: Array<any> = [
     {name: '', email: '', address: ''}
   ]
-  submitData( userName: any , userEmail: any, userAddress: any){
+  submitData(){
     this.users.push(
-      {name:userName, email:userEmail, address:userAddress},
+      {name:this.userName, email:this.userEmail, address:this.userAddress},
     )
   }
   onDelete(index:any){
