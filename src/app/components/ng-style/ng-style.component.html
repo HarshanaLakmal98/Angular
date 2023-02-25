@@ -1,0 +1,14 @@
+<div class="container">
+  <h1 class="text-center h3 fw-bold">Ng Style</h1>
+
+  <h3>way 1</h3>
+  <p [ngStyle]="{
+    textAlign: isActive ? 'justify': 'center',
+    color: isActive ? 'red': 'blue'
+  }">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur incidunt recusandae beatae, consequuntur blanditiis officiis vero dolor molestiae aliquam suscipit accusamus, itaque qui non laborum optio veritatis cupiditate consectetur!</p>
+
+
+  <!-- create css style object inside the ts file and that object variables have use in this p tag. And if isActive is true then paraColor1 call else paraColor2 Will call. -->
+  <h3>way 2</h3>
+  <p  [ngStyle]="isActive? paraColor1: paraColor2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, minima labore officia, assumenda quod mollitia, quas perspiciatis sunt voluptates deserunt dicta commodi veniam ea laborum cumque possimus nesciunt delectus velit.</p>
+</div>

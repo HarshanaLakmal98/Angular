@@ -18,6 +18,7 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { ChlidComp1Component } from './components/chlid-comp1/chlid-comp1.component';
 import { EventFilteringComponent } from './components/event-filtering/event-filtering.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { NgStyleComponent } from './components/ng-style/ng-style.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     NgSwitchComponent,
     ChlidComp1Component,
     EventFilteringComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    NgStyleComponent
   ],
   imports: [
     FormsModule,
