@@ -20,4 +20,11 @@ export class PipesComponent {
   // Date pipes
   date: Date = new Date
 
+  // json pipes (this pipes is used to work with object)
+  person: object={
+    id:1, name: 'harahana', age: 15
+  }
+
+  // slice pipes (this pipes is used to work with array)
+  number: string []= ['one', 'two', 'tree', 'four', 'five']
 }

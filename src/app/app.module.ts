@@ -21,6 +21,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { Activity1Component } from './activity/activity1/activity1.component';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { ApendPipePipe } from './custom/pipe/apend-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { PipesComponent } from './components/pipes/pipes.component';
     TwoWayBindingComponent,
     NgStyleComponent,
     Activity1Component,
-    PipesComponent
+    PipesComponent,
+    ApendPipePipe
   ],
   imports: [
     FormsModule,
