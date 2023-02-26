@@ -18,7 +18,7 @@ export class PipesComponent {
   currency: number = 4572.25;
 
   // Date pipes
-  date: Date = new Date
+  date: Date = new Date;
 
   // json pipes (this pipes is used to work with object)
   person: object={
@@ -26,5 +26,10 @@ export class PipesComponent {
   }
 
   // slice pipes (this pipes is used to work with array)
-  number: string []= ['one', 'two', 'tree', 'four', 'five']
+  number: string []= ['one', 'two', 'tree', 'four', 'five'];
+
+  // custom pipes variable
+
+  name: string = 'Harshana';
+
 }
