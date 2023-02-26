@@ -20,6 +20,7 @@ import { EventFilteringComponent } from './components/event-filtering/event-filt
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { Activity1Component } from './activity/activity1/activity1.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { Activity1Component } from './activity/activity1/activity1.component';
     EventFilteringComponent,
     TwoWayBindingComponent,
     NgStyleComponent,
-    Activity1Component
+    Activity1Component,
+    PipesComponent
   ],
   imports: [
     FormsModule,
