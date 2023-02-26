@@ -22,6 +22,7 @@ import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { Activity1Component } from './activity/activity1/activity1.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ApendPipePipe } from './custom/pipe/apend-pipe.pipe';
+import { CustomPipewithArgumentPipe } from './custom/pipe/custom-pipewith-argument.pipe';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ApendPipePipe } from './custom/pipe/apend-pipe.pipe';
     NgStyleComponent,
     Activity1Component,
     PipesComponent,
-    ApendPipePipe
+    ApendPipePipe,
+    CustomPipewithArgumentPipe
   ],
   imports: [
     FormsModule,
