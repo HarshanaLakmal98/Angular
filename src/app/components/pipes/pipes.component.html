@@ -2,6 +2,20 @@
   <h2 class="text-center text-bg-primary my-2">Angular Pipes</h2>
   <br>
   <h3>Uppercase and Lowercase Pipes</h3>
-  <p><strong>Uppercase Pipes </strong> <span>{{uppercase | uppercase}}</span></p>
-  <p><strong>Lowercase Pipes </strong> <span>{{lowercase | lowercase}}</span></p>
+  <p><strong>Uppercase Pipes </strong> <span>{{text| uppercase}}</span></p>
+  <p><strong>Lowercase Pipes </strong> <span>{{text | lowercase}}</span></p>
+
+  <br>
+  <h3>Number and Decimal Pipes</h3>
+  <p><strong>Number : </strong><span>{{count | number}}</span></p>
+  <p><strong>Decimal : </strong><span>{{countDecimal | number: '2.2-2'}}</span></p>
+
+  <br>
+  <h3>Currency Pipes</h3>
+  <p><strong>Currency : </strong> <span>{{currency | currency: 'RS'}}</span></p>
+
+  <br>
+  <h3>Date Pipes</h3>
+  <p><strong>Date : </strong> <span>{{date | date: 'short'}}</span></p>
+
 </div>

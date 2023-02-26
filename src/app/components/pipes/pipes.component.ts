@@ -6,7 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./pipes.component.scss']
 })
 export class PipesComponent {
-  uppercase: string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus labore animi.';
 
-  lowercase: string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus labore animi.';
+  // This variable for uppercase and lowercase pipes
+  text: string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatibus labore animi.';
+
+  // this variable for number and decimal pipes
+  count : number = 453250;
+  countDecimal: number = 45.254889;
+
+  // currency pipes
+  currency: number = 4572.25;
+
+  // Date pipes
+  date: Date = new Date
+
 }
