@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from 'src/app/custom/model/user';
 import { UserService } from 'src/app/custom/service/user.service';
 
 @Component({
@@ -13,8 +14,8 @@ export class ServiceComponent {
   }
   // create method to add data to the postList array which is in service.ts
   addNew(){
-    
-    let newPost: {}={
+
+    let newPost: User={
       id: 7,postTitle: 'Post 7'
     }
     this.userService.addNewPost(newPost);/* access method in UserService and pass the newPost object as a parameter */
