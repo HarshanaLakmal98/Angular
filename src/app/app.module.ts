@@ -23,6 +23,8 @@ import { Activity1Component } from './activity/activity1/activity1.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ApendPipePipe } from './custom/pipe/apend-pipe.pipe';
 import { CustomPipewithArgumentPipe } from './custom/pipe/custom-pipewith-argument.pipe';
+import { ServiceComponent } from './components/service/service.component';
+import { Service2Component } from './components/service2/service2.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { CustomPipewithArgumentPipe } from './custom/pipe/custom-pipewith-argume
     Activity1Component,
     PipesComponent,
     ApendPipePipe,
-    CustomPipewithArgumentPipe
+    CustomPipewithArgumentPipe,
+    ServiceComponent,
+    Service2Component
   ],
   imports: [
     FormsModule,
