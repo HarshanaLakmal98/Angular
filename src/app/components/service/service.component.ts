@@ -11,4 +11,12 @@ export class ServiceComponent {
   constructor(private userService: UserService){
     this.users = userService.postList;
   }
+  // create method to add data to the postList array which is in service.ts
+  addNew(){
+    
+    let newPost: {}={
+      id: 7,postTitle: 'Post 7'
+    }
+    this.userService.addNewPost(newPost);/* access method in UserService and pass the newPost object as a parameter */
+  }
 }

@@ -13,5 +13,8 @@ export class UserService {
     {id: 5, postTitle: 'Post 5'},
     {id: 6, postTitle: 'Post 6'},
   ]
+  addNewPost(data: any){
+    this.postList.push(data) /* access data from service components.ts file and get new post data  */
+  }
   constructor() { }
 }
