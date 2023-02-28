@@ -25,6 +25,7 @@ import { ApendPipePipe } from './custom/pipe/apend-pipe.pipe';
 import { CustomPipewithArgumentPipe } from './custom/pipe/custom-pipewith-argument.pipe';
 import { ServiceComponent } from './components/service/service.component';
 import { Service2Component } from './components/service2/service2.component';
+import { DrivenFormComponent } from './components/driven-form/driven-form.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { Service2Component } from './components/service2/service2.component';
     ApendPipePipe,
     CustomPipewithArgumentPipe,
     ServiceComponent,
-    Service2Component
+    Service2Component,
+    DrivenFormComponent
   ],
   imports: [
     FormsModule,

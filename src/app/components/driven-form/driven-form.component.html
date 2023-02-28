@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>Driven Form</h1>
+  <form #form="ngForm" (Submit)="onSubmit(form)">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+      type="text"
+      name="name"
+      id="name"
+      class="form-control"
+      placeholder="Enter Your Name"
+      ngModel
+      #name="ngModel"
+      (change)="getValue(name)"
+      [required]='true'
+      [ngClass]="{'is-invalid' : name.invalid && name.touched}"
+      minlength="5"
+      maxlength="15"
+      >
+
+      <div *ngIf="name.errors?.['required']">
+        <div class="alert alert-danger" *ngIf="name.invalid && name.touched">You Must Enter Your Name</div>
+      </div>
+      <div *ngIf="name.errors?.['minlength']">
+        <div class="alert alert-danger" *ngIf="name.invalid && name.touched">You Must Enter At least 5 character</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email : </label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email" ngModel #email="ngModel">
+      <!-- (change)="onChangeEmail(email)" -->
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <textarea name="address" id="address" cols="30" rows="10" class="form-control" placeholder="Enter Your Address"  #address="ngModel" ngModel ></textarea>
+      <!-- (change)="onChangeAddress(address)" -->
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>
