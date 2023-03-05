@@ -28,6 +28,7 @@ import { Service2Component } from './components/service2/service2.component';
 import { DrivenFormComponent } from './components/driven-form/driven-form.component';
 import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 import { ReactiveFormNestedComponent } from './components/reactive-form-nested/reactive-form-nested.component';
+import { ReactiveFormArrayComponent } from './components/reactive-form-array/reactive-form-array.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { ReactiveFormNestedComponent } from './components/reactive-form-nested/r
     Service2Component,
     DrivenFormComponent,
     ReactiveFormComponent,
-    ReactiveFormNestedComponent
+    ReactiveFormNestedComponent,
+    ReactiveFormArrayComponent
   ],
   imports: [
     FormsModule,

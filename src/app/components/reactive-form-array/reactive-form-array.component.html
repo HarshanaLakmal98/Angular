@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 class="text-center text-bg-primary p-1 my-2">Reactive Form Nested</h1>
+  <h1 class="text-center text-bg-primary p-1 my-2">Reactive Form Array</h1>
   <form [formGroup]="userForm">
 
     <div class="form-group">
@@ -29,6 +29,11 @@
     <div class="form-group">
       <label for="about">About you </label>
       <textarea name="about" id="about" cols="30" rows="10" class="form-control" formControlName="about"></textarea>
+    </div>
+    <!-- form Array -->
+    <div class="form-group">
+      <label for="">Skills</label>
+      <input type="text" name="" id="" class="form-control" #skill (keyup)="addSkills(skill)">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
