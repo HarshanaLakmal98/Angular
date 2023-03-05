@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="text-center text-bg-primary p-1 my-2">Reactive Form</h1>
+  <form [formGroup]="userForm">
+
+    <div class="form-group">
+      <label for="name">User Name : </label>
+      <input type="text" name="name" id="name" class="form-control" formControlName="name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">User Email : </label>
+      <input type="email" name="email" id="email" class="form-control" formControlName="email">
+    </div>
+
+    <!-- nested formGroup -->
+    <div class="form-group row" formGroupName="address">
+      <label for="" class="h6 mt-2 mb-0">Address</label>
+
+      <div class="col">
+        <label for="street">Street :</label>
+        <input type="text" name="street" id="street" class="form-control" formControlName="street">
+      </div>
+      <div class="col">
+        <label for="city">City :</label>
+        <input type="text" name="city" id="city" class="form-control" formControlName="city">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="about">About you </label>
+      <textarea name="about" id="about" cols="30" rows="10" class="form-control" formControlName="about"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
