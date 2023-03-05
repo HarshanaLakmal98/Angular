@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +26,7 @@ import { CustomPipewithArgumentPipe } from './custom/pipe/custom-pipewith-argume
 import { ServiceComponent } from './components/service/service.component';
 import { Service2Component } from './components/service2/service2.component';
 import { DrivenFormComponent } from './components/driven-form/driven-form.component';
+import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -51,12 +52,14 @@ import { DrivenFormComponent } from './components/driven-form/driven-form.compon
     CustomPipewithArgumentPipe,
     ServiceComponent,
     Service2Component,
-    DrivenFormComponent
+    DrivenFormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

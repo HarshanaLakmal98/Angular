@@ -1,0 +1,10 @@
+.container{
+  form{
+    .form-group > *{
+      margin: .25rem 0;
+    }
+    .form-group{
+      margin: .75rem 0;
+    }
+  }
+}
